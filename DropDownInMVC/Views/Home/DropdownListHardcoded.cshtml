@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "DropdownListHardcoded";
+}
+
+<h2>DropdownList using Hardcoded data in view</h2>
+
+@using (Html.BeginForm("DropdownListHardcoded", "Home", FormMethod.Post))
+{
+    <div class="form-group">
+        <label >HardCoded Drop Down</label>
+        @Html.DropDownList("SelectedProgram", new List<SelectListItem> {
+   new SelectListItem{
+   Text = "BSCS",
+   Value= "1"
+   },
+
+   new SelectListItem{
+   Text = "BSIT",
+   Value= "2"
+   },
+
+   new SelectListItem{
+   Text = "BSSE",
+   Value= "3"
+   },
+
+   new SelectListItem{
+   Text = "BS Chemistry",
+   Value= "4"
+   },
+
+   new SelectListItem{
+   Text = "BBA",
+   Value= "5"
+   }},"Select Program",new { @class="form-control"})
+    </div>
+
+    <button type="submit" class="btn btn-primary">Click</button>
+}
+
