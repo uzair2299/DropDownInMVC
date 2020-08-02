@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DropDownInMVC.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -65,5 +66,32 @@ namespace DropDownInMVC.Controllers
             return View();
         }
 
+
+        public ActionResult UsingModel()
+        {
+            using(var appContext =  new ApplicationContext())
+            {
+                var countries = appContext.countries.Select(x => new SelectListItem()
+                {
+                    Text = x.CountryName,
+                    Value=x.CountryId.ToString()
+                }).ToList();
+                var countrytip = new SelectListItem()
+                {
+                    Value = null,
+                    Text = "--- select country ---"
+                };
+                countries.Insert(0, countrytip);
+                return View(countries);
+            }
+        }
+
+        [HttpPost]
+        public ActionResult UsingModel(string SelectedCountry)
+        {
+            ViewBag.MyPrograms = myPrograms;
+            return View();
+        }
     }
+
 }

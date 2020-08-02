@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "UsingModel";
+}
+
+<h2>DropdownList using Model</h2>
+
+@using (Html.BeginForm("UsingModel", "Home", FormMethod.Post))
+{
+    <div class="form-group">
+        <label>DropdownList using Model</label>
+        @Html.DropDownList("SelectedCountry",new SelectList(Model,"Value","Text"), new { @class = "form-control" })
+    </div>
+
+    <button type="submit" class="btn btn-primary">Click</button>
+}
