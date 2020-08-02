@@ -7,13 +7,13 @@ namespace DropDownInMVC.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class inti : IMigrationMetadata
+    public sealed partial class SeedData : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(inti));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(SeedData));
         
         string IMigrationMetadata.Id
         {
-            get { return "202008020837395_inti"; }
+            get { return "202008020927421_SeedData"; }
         }
         
         string IMigrationMetadata.Source

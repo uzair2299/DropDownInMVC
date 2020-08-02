@@ -131,13 +131,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202008020837395_inti.cs" />
-    <Compile Include="Migrations\202008020837395_inti.designer.cs">
-      <DependentUpon>202008020837395_inti.cs</DependentUpon>
+    <Compile Include="Migrations\202008020926236_init.cs" />
+    <Compile Include="Migrations\202008020926236_init.designer.cs">
+      <DependentUpon>202008020926236_init.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202008020842000_Seed_Countries.cs" />
-    <Compile Include="Migrations\202008020842000_Seed_Countries.designer.cs">
-      <DependentUpon>202008020842000_Seed_Countries.cs</DependentUpon>
+    <Compile Include="Migrations\202008020927421_SeedData.cs" />
+    <Compile Include="Migrations\202008020927421_SeedData.designer.cs">
+      <DependentUpon>202008020927421_SeedData.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationContext.cs" />
@@ -198,11 +198,11 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202008020837395_inti.resx">
-      <DependentUpon>202008020837395_inti.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202008020926236_init.resx">
+      <DependentUpon>202008020926236_init.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202008020842000_Seed_Countries.resx">
-      <DependentUpon>202008020842000_Seed_Countries.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202008020927421_SeedData.resx">
+      <DependentUpon>202008020927421_SeedData.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

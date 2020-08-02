@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Seed_Countries : DbMigration
+    public partial class SeedData : DbMigration
     {
         public override void Up()
         {

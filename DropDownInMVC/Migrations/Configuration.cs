@@ -20,7 +20,8 @@
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method
             //  to avoid creating duplicate seed data.
 
-            //context.countries.AddOrUpdate()
+            //context.countries.AddOrUpdate(x => x.CountryId, new Country() { CountryName = "Dubai" });
+            //context.countries.AddOrUpdate(x => x.CountryId, new Country() { CountryName = "Qatar" });
         }
     }
 }
