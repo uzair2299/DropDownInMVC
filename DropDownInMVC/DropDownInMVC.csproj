@@ -131,6 +131,14 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202008020837395_inti.cs" />
+    <Compile Include="Migrations\202008020837395_inti.designer.cs">
+      <DependentUpon>202008020837395_inti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202008020842000_Seed_Countries.cs" />
+    <Compile Include="Migrations\202008020842000_Seed_Countries.designer.cs">
+      <DependentUpon>202008020842000_Seed_Countries.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationContext.cs" />
     <Compile Include="Models\Country.cs" />
@@ -188,6 +196,14 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202008020837395_inti.resx">
+      <DependentUpon>202008020837395_inti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202008020842000_Seed_Countries.resx">
+      <DependentUpon>202008020842000_Seed_Countries.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
